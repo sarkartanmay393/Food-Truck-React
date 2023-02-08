@@ -1,0 +1,17 @@
+.Header {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans';
+
+    border: 1px solid black;
+}
+
+
+@media (max-width: 600px) {
+    .Header {
+        flex-direction: column-reverse;
+    }
+}

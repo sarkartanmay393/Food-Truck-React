@@ -1,0 +1,124 @@
+.HeaderVector {
+    position: absolute;
+    top: -1%;
+    right: 0;
+
+    height: 100%;
+    /*width: 50%;*/
+}
+
+/* Left half of Top Screen */
+.TopIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    /*border: 1px solid black;*/
+}
+
+.CenterArea {
+    /*border: 1px solid black;*/
+
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+.CenterArea > img {
+    align-self: start;
+    width: 100px;
+
+    margin-bottom: 40%;
+}
+.CenterArea > h3 {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 48px;
+
+    margin: 0;
+}
+.CenterArea > h3 > span {
+    color: crimson;
+}
+.CenterArea > p {
+    font-size: 16px;
+    font-weight: 400;
+
+    margin: 24px 0;
+}
+.CenterArea > button {
+    border: 0;
+    border-radius: 34px;
+    background-color: #E23744;
+
+    color: white;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 700;
+
+    height: 48px;
+    width: 192px;
+}
+
+/* Right Half of Screen */
+.TopPizza {
+    display: flex;
+    width: 50%;
+
+    /*border: 1px solid black;*/
+}
+.TopPizza > img {
+    width: 100%;
+    /*height: 95%;*/
+
+    position: relative;
+    top: -2%;
+    right: -8%;
+}
+
+
+@media (max-width: 600px) {
+    .HeaderVector {
+        height: 58vh;
+    }
+
+    .TopIntro {
+        display: flex;
+        width: 100%;
+        height: 50%;
+
+
+    }
+    .TopPizza {
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    .TopPizza > img {
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+
+    .CenterArea {
+        width: 100%;
+        height: 100%;
+
+        padding: 0 18%;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .CenterArea > h3 {
+        font-size: 38px;
+    }
+    .CenterArea > p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
