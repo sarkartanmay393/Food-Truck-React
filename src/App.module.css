@@ -9,6 +9,16 @@
     /*border: 1px solid black;*/
 }
 
+.Main {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .Footer {
     width: 100vw;
     /*height: 30vh;*/
@@ -28,12 +38,39 @@
     padding: 0;
 }
 
+/* All Buttons */
+button {
+    border: 0;
+    border-radius: 34px;
+    background-color: #E23744;
+
+    color: white;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 700;
+
+    height: 48px;
+    width: 192px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
 @media (max-width: 600px) {
     .Header {
         flex-direction: column-reverse;
+    }
 
-        scroll-snap-align: start;
+    .Main {
+        width: 100vw;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+
+        align-content: center;
     }
 
     .Footer {
@@ -43,9 +80,6 @@
         padding: 0;
         justify-content: center;
         gap: 2rem;
-
-        scroll-snap-align: start;
-
     }
 
     .Footer * {

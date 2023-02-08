@@ -15,11 +15,3 @@ body {
 code {
   font-family: monospace;
 }
-
-
-@media (max-width: 600px) {
-  body {
-    scroll-snap-type: y mandatory;
-    overflow-y: auto;
-  }
-}

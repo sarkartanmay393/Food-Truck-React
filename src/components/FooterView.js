@@ -1,9 +1,6 @@
 import styles from './FooterView.module.css';
-import {useContext} from "react";
-import {MobileViewContext} from "../index";
 
 function FooterView() {
-    const isMobile = useContext(MobileViewContext);
     return (
         <>
             <img className={styles.FooterLogo} src={require('../assets/food-truck.png')} alt='website-logo' />
