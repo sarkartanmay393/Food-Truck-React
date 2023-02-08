@@ -1,0 +1,84 @@
+.FooterLogo {
+    height: 100px;
+}
+
+.FooterH1 {
+    font-size: 18px;
+}
+
+.ContactUs {
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+}
+
+.ContactUs > p {
+    margin: 8px 0;
+}
+
+.MoreOptions {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+}
+
+.MoreOptions > a {
+    margin: 8px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.Socials {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Socials * {
+    margin: 4px 0;
+}
+
+.SocialsRow {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.CopyrightText {
+    position: relative;
+    bottom: -10%;
+}
+
+@media (max-width: 600px) {
+    .FooterLogo {
+        width: 75px;
+        height: 58px;
+    }
+
+    .ContactUs {
+        width: 70%;
+    }
+    .ContactUs > p {
+        margin: 4px 0;
+    }
+
+    .MoreOptions {
+        width: 70%;
+    }
+    .MoreOptions > a {
+        margin: 4px 0;
+    }
+
+    .Socials {
+        width: 70%;
+    }
+}

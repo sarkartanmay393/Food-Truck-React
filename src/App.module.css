@@ -6,12 +6,50 @@
     flex-direction: row;
     font-family: 'Open Sans';
 
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+
+.Footer {
+    width: 100vw;
+    /*height: 30vh;*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 16px 0;
+    font-size: 14px;
+    font-family: 'Source Sans Pro';
+    /*border: 1px solid black;*/
+}
+
+.Footer * {
+    margin: 0;
+    padding: 0;
 }
 
 
 @media (max-width: 600px) {
     .Header {
         flex-direction: column-reverse;
+
+        scroll-snap-align: start;
+    }
+
+    .Footer {
+        height: 100vh;
+        flex-direction: column;
+
+        padding: 0;
+        justify-content: center;
+        gap: 2rem;
+
+        scroll-snap-align: start;
+
+    }
+
+    .Footer * {
+        place-self: center;
+        text-align: center;
     }
 }
