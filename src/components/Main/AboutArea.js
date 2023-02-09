@@ -1,12 +1,12 @@
 import styles from './AboutArea.module.css';
 import {useContext} from "react";
-import {MobileViewContext} from "../index";
+import {MobileViewContext} from "../../index";
 
 function AboutArea() {
     const isMobile = useContext(MobileViewContext)
     return (
         <section className={styles.AboutArea}>
-            {isMobile ? <></> : <img className={styles.AboutImage} src={require('../assets/about-img.png')} alt='website-about-img' />}
+            {isMobile ? <></> : <img className={styles.AboutImage} src={require('../../assets/about-img.png')} alt='website-about-img' />}
             <section className={styles.AboutTexts}>
                 <h1>About Us</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and

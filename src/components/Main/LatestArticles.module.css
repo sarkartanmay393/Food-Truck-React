@@ -1,0 +1,91 @@
+.ArticleArea {
+    margin: 18px 0;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+.ArticleAreaHeadline {
+    font-size: 48px;
+    font-weight: 500;
+
+    width: fit-content;
+
+    position: relative;
+    left: 12%;
+    margin: 12px 0;
+}
+
+.Articles {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 2rem;
+    /*overflow-x: hidden;*/
+}
+
+.PageSlider {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 8px 0;
+
+    font-family: 'Poppins';
+}
+
+.PageSlider > p {
+    margin: 0 8px;
+    font-size: 16px;
+
+    align-self: center;
+}
+
+
+
+.LeftArrow {
+    height: 22px;
+    transform: rotate(180deg);
+}
+
+.RightArrow {
+    height: 22px;
+}
+
+
+.active {
+    font-weight: 600;
+}
+
+.noActive {
+    font-weight: 400;
+}
+
+
+@media (max-width: 600px) {
+    .ArticleArea {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .ArticleAreaHeadline {
+        font-size: 36px;
+        font-weight: 600;
+
+        position: relative;
+        left: 8%;
+        margin: 16px 0 0 0;
+    }
+
+    .Articles {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 12px;
+    }
+}
+

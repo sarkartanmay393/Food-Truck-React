@@ -1,8 +1,8 @@
 import styles from './App.module.css';
-import HeaderView from "./components/HeaderView";
-import FooterView from "./components/FooterView";
-import AboutArea from "./components/AboutArea";
-import LatestArticles from "./components/LatestArticles";
+import HeaderView from "./components/Header/HeaderView";
+import FooterView from "./components/Footer/FooterView";
+import AboutArea from "./components/Main/AboutArea";
+import LatestArticles from "./components/Main/LatestArticles";
 
 
 function App() {
