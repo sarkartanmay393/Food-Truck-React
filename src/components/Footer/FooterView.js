@@ -1,6 +1,9 @@
 import styles from './FooterView.module.css';
+import {useContext} from "react";
+import {MobileViewContext} from "../../index";
 
 function FooterView() {
+    const isMobile: Boolean = useContext(MobileViewContext);
     return (
         <>
             <img className={styles.FooterLogo} src={require('../../assets/food-truck.png')} alt='website-logo' />
@@ -20,16 +23,26 @@ function FooterView() {
                 <a href='/contact-us'>Contact Us</a>
             </section>
 
-            <section className={styles.Socials}>
-                <h1 className={styles.FooterH1}>Social Links</h1>
-                <div className={styles.SocialsRow}>
-                    <a href='/instagram' target='_blank'><img src={require('../../assets/insta.svg').default} alt='instagram-link' /></a>
-                    <a href='/twitter' target='_blank'><img src={require('../../assets/twitter.svg').default} alt='instagram-link' /></a>
-                    <a href='/facebook' target='_blank'><img src={require('../../assets/fb.svg').default} alt='instagram-link' /></a>
-                </div>
+            {isMobile ?
+                <section className={styles.Socials}>
+                    <p className={styles.CopyrightText}>© 2022 Food Truck Example</p>
+                    <div className={styles.SocialsRow}>
+                        <a href='/instagram' target='_blank'><img src={require('../../assets/insta.svg').default} alt='instagram-link' /></a>
+                        <a href='/twitter' target='_blank'><img src={require('../../assets/twitter.svg').default} alt='instagram-link' /></a>
+                        <a href='/facebook' target='_blank'><img src={require('../../assets/fb.svg').default} alt='instagram-link' /></a>
+                    </div>
+                </section> :
+                <section className={styles.Socials}>
+                    <h1 className={styles.FooterH1}>Social Links</h1>
+                    <div className={styles.SocialsRow}>
+                        <a href='/instagram' target='_blank'><img src={require('../../assets/insta.svg').default} alt='instagram-link' /></a>
+                        <a href='/twitter' target='_blank'><img src={require('../../assets/twitter.svg').default} alt='instagram-link' /></a>
+                        <a href='/facebook' target='_blank'><img src={require('../../assets/fb.svg').default} alt='instagram-link' /></a>
+                    </div>
 
-                <p className={styles.CopyrightText}>© 2022 Food Truck Example</p>
-            </section>
+                    <p className={styles.CopyrightText}>© 2022 Food Truck Example</p>
+                </section>
+            }
         </>
     );
 }

@@ -72,15 +72,14 @@
 
 @media (max-width: 600px) {
     .FooterLogo {
-        width: 75px;
-        height: 58px;
+        width: 100px;
+        height: 70px;
+        margin-bottom: 32px;
     }
 
     .ContactUs {
         width: 70%;
-
-        justify-content: start;
-        align-content: start;
+        margin-left: 10%;
     }
     .ContactUs > p {
         margin: 4px 0;
@@ -88,16 +87,29 @@
 
     .MoreOptions {
         width: 70%;
+        margin-left: 10%;
     }
     .MoreOptions > a {
-        margin: 4px 0;
+        margin: 6px 0;
     }
 
     .Socials {
         width: 70%;
+        margin-top: 64px;
+        align-self: center;
+        align-items: center;
     }
+
     .SocialsRow {
-        gap: 0;
-        justify-content: space-evenly;
+        gap: 1.6rem;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CopyrightText {
+        margin: 0;
+        font-size: 12px;
+        position: static;
     }
 }

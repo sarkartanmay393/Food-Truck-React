@@ -86,7 +86,7 @@ a {
     }
 
     .Footer * {
-        place-self: center;
-        text-align: center;
+        /*place-self: start;*/
+        /*text-align: start;*/
     }
 }
