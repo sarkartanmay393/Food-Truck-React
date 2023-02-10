@@ -23,9 +23,9 @@ function FooterView() {
             <section className={styles.Socials}>
                 <h1 className={styles.FooterH1}>Social Links</h1>
                 <div className={styles.SocialsRow}>
-                    <a href='/products' target='_blank'><img src={require('../../assets/insta.svg').default} alt='instagram-link' /></a>
-                    <a href='/products' target='_blank'><img src={require('../../assets/twitter.svg').default} alt='instagram-link' /></a>
-                    <a href='/products' target='_blank'><img src={require('../../assets/fb.svg').default} alt='instagram-link' /></a>
+                    <a href='/instagram' target='_blank'><img src={require('../../assets/insta.svg').default} alt='instagram-link' /></a>
+                    <a href='/twitter' target='_blank'><img src={require('../../assets/twitter.svg').default} alt='instagram-link' /></a>
+                    <a href='/facebook' target='_blank'><img src={require('../../assets/fb.svg').default} alt='instagram-link' /></a>
                 </div>
 
                 <p className={styles.CopyrightText}>© 2022 Food Truck Example</p>

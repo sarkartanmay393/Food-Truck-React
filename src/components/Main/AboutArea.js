@@ -15,7 +15,7 @@ function AboutArea() {
                     printer took a galley of type and scrambled it to make a
                     type specimen book. t has survived not only five centuries.
                 </p>
-                <button><a href='/about-us'>Read More</a></button>
+                <button>Read More</button>
             </section>
         </section>
     );

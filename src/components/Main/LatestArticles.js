@@ -8,40 +8,28 @@ function LatestArticles() {
     const articles = [
             {
             title: 'Grilled Tomatoes at Home',
-            desc: `PLorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard...`,
+            desc: `PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....`,
             image: require('../../assets/a-1.png'),
             },{
             title: 'Snacks for Travel',
-            desc: `PLorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard...`,
+            desc: `PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....`,
             image: require('../../assets/a-2.png'),
             },{
             title: 'Post-workout Recipes',
-            desc: `PLorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard...`,
+            desc: `PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....`,
             image: require('../../assets/a-3.png'),
             },{
             title: 'How To Grill Corn',
-            desc: `PLorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard...`,
+            desc: `PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....`,
             image: require('../../assets/a-4.png'),
 
             },{
             title: 'Crunchwrap Supreme',
-            desc: `PLorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard...`,
+            desc: `PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....`,
             image: require('../../assets/a-5.png'),
             },{
             title: 'Broccoli Cheese Soup',
-            desc: `PLorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard...`,
+            desc: `PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley....`,
             image: require('../../assets/a-6.png'),
             },
         ];
@@ -87,17 +75,23 @@ function LatestArticles() {
     };
     return (
         <section className={styles.ArticleArea}>
-            <h1 className={styles.ArticleAreaHeadline}>Latest Articles</h1>
             <BrowserRouter>
                 <Switch>
                     <Route exact path='/'>
+                        <h1 className={styles.ArticleAreaHeadline}>
+                            Latest Articles
+                        </h1>
                         <LatestArticlesComponent page={1}/>
+                        <PageSlider />
                     </Route>
                     <Route exact path='/page2'>
+                        <h1 className={styles.ArticleAreaHeadline}>
+                            Latest Articles
+                        </h1>
                         <LatestArticlesComponent page={2} />
+                        <PageSlider />
                     </Route>
                 </Switch>
-                <PageSlider />
             </BrowserRouter>
         </section>
     );

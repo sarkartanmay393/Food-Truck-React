@@ -44,6 +44,8 @@ button {
     border-radius: 34px;
     background-color: #E23744;
 
+    cursor: pointer;
+    
     color: white;
     font-size: 14px;
     font-family: "Open Sans";
