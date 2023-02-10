@@ -27,9 +27,11 @@
     flex-direction: row;
     justify-content: space-evenly;
 
-    padding: 16px 0;
+    color: #0E2368;
+    padding: 48px 0 42px 0;
     font-size: 14px;
     font-family: 'Source Sans Pro';
+    background: #F8F8F8;
     /*border: 1px solid black;*/
 }
 

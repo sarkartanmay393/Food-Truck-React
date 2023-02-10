@@ -4,7 +4,6 @@ import FooterView from "./components/Footer/FooterView";
 import AboutArea from "./components/Main/AboutArea";
 import LatestArticles from "./components/Main/LatestArticles";
 
-
 function App() {
 
     return (

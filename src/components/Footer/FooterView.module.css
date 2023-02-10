@@ -1,9 +1,12 @@
 .FooterLogo {
-    height: 100px;
+    height: 80px;
+    align-self: center;
 }
 
 .FooterH1 {
     font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
 }
 
 .ContactUs {
@@ -16,7 +19,9 @@
 }
 
 .ContactUs > p {
-    margin: 8px 0;
+    color: #646874;
+    font-weight: 400;
+    margin: 12px 0 0 0;
 }
 
 .MoreOptions {
@@ -29,9 +34,10 @@
 }
 
 .MoreOptions > a {
-    margin: 8px 0;
+    margin: 12px 0 0 0;
     text-decoration: none;
-    color: black;
+    color: #646874;
+    font-weight: 400;
 }
 
 .Socials {
@@ -47,15 +53,21 @@
 }
 
 .SocialsRow {
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 1.6rem;
 }
 
 .CopyrightText {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+
+    margin: auto 0;
     position: relative;
-    bottom: -10%;
+    bottom: -12%;
+    color: #828B9C;
 }
 
 @media (max-width: 600px) {
@@ -66,6 +78,9 @@
 
     .ContactUs {
         width: 70%;
+
+        justify-content: start;
+        align-content: start;
     }
     .ContactUs > p {
         margin: 4px 0;
@@ -80,5 +95,9 @@
 
     .Socials {
         width: 70%;
+    }
+    .SocialsRow {
+        gap: 0;
+        justify-content: space-evenly;
     }
 }

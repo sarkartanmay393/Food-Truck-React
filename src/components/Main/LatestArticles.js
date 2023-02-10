@@ -38,7 +38,7 @@ function LatestArticles() {
         return (
             <div className={styles.PageSlider}>
                 <a href='/'>
-                    <img className={styles.LeftArrow} src={require('../../assets/right-arrow.svg').default} alt='left-arrow-button' />
+                    <img className={styles.LeftArrow} src={pageNo === 1 ? require('../../assets/left-inactive.svg').default : require('../../assets/left-active.svg').default} alt='left-arrow-button' />
                 </a>
                 <p>
                     <span id='page-1' className={pageNo === 1 ? styles.active : styles.noActive}>
@@ -50,7 +50,7 @@ function LatestArticles() {
                     </span>
                 </p>
                 <a href='/page2'>
-                    <img className={styles.RightArrow} src={require('../../assets/right-arrow.svg').default} alt='right-arrow-button' />
+                    <img className={styles.RightArrow} src={pageNo === 2 ? require('../../assets/right-inactive.svg').default : require('../../assets/right-active.svg').default} alt='right-arrow-button' />
                 </a>
             </div>
         );
